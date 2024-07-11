@@ -9,12 +9,18 @@
     
 }
 
+/* ******************--mobile--***************** */
+
 body{
     background:var(--main-color);
     color: white;
     width: 400px;
     margin: 0 auto;
 }
+
+/* navigation */
+
+
 .bar{
     display: flex;
     flex-direction: column;
@@ -25,8 +31,25 @@ body{
 ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+}
+
+li{
+    padding: 24px;
+
+}
+
+ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    background-color: var(--hover-color);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 20px;
 }
 
 
@@ -34,7 +57,6 @@ h1{
     font-family: var(--title-font);
     font-size: 2.5em;
 }
-/* highlight style */
 .highlight{
     position: relative;
 }
@@ -53,6 +75,8 @@ h1{
 }
 
 
+
+/* banner */
 .wrapper{
     position: relative;
     overflow: hidden;
@@ -68,22 +92,44 @@ h1{
     to {transform: scale(1.5);}
 }
 
-h2, li, p, button {
+h2, h3, li, p, button {
     font-family: var(--body-font);
 }
 
 .text{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    align-content: end;
+    align-items: center;
+    padding-top: 300px;
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
     z-index: 5;
 }
+.magazine {
+    font-size: 13px;
+    font-weight: bold;
+}
+.around{
+    font-size: 15px;
+    padding-top: 20px;
+ 
+
+}
+h2{
+    font-size: 45px;
+    padding: 20px;
+}
+
+h2 ~ h2 {
+    font-weight: 1000;
+
+}
 
 .colorshift{
-    background: -webkit-linear-gradient(0deg,#066fac,#29a7c2);
+    background: -webkit-linear-gradient(0deg,#015687,#62d0e9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
