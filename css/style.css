@@ -9,7 +9,7 @@
     
 }
 
-/* ******************--mobile--***************** */
+/* ******************-- MOBILE --***************** */
 
 body{
     background:var(--main-color);
@@ -212,7 +212,7 @@ button:hover{
 
 
 
-/* ************--medium size-- ************** */
+/* ************-- MEDIUM SIZE -- ************** */
 @media screen and (min-width:400px) {
     body{
         background:var(--main-color);
@@ -226,8 +226,6 @@ button:hover{
     .bar{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
     
     ul{
@@ -410,5 +408,212 @@ button:hover{
 
     
 }
+
+
+
+/* ************* LAPTOP ************* */
+
+@media screen and (min-width:900px) {
+    body{
+        background:var(--main-color);
+        color: white;
+        width: 100%;
+    }
+    
+    /* navigation */
+    
+    
+    .bar{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    li{
+        padding: 24px;
+    
+    }
+    
+    ul li a{
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+    }
+    ul li a:hover{
+        background-color: var(--hover-color);
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 20px;
+    }
+    
+    
+    h1{
+        font-family: var(--title-font);
+        font-size: 1.5em;
+        padding: 10px;
+
+    }
+    .highlight{
+        position: relative;
+    }
+    
+    .highlight::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 13px;
+        right: 0;
+        bottom: 10px;
+        z-index: -1;
+        display: inline-block;
+        background: var(--hover-color);
+    
+    }
+    
+    
+    
+    /* banner */
+    .wrapper{
+        position: relative;
+        overflow: hidden;
+        /* border: rgb(198, 194, 74) solid 2px; */
+        border-radius: 30px;
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+        
+    }
+    .banner{
+        width: 100%;
+        height: auto;
+        animation: zoom 6s;
+        
+    }
+    
+    @keyframes zoom{
+        from {transform: scale(1);}
+        to {transform: scale(1.5);}
+    }
+    
+    h2, h3, li, p, button {
+        font-family: var(--body-font);
+    }
+    
+    .text{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: end;
+        padding: 60px;
+        align-items: flex-start;
+        
+    }
+    .magazine {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        
+    }
+    .around{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 3em;
+        padding: 0;
+    }
+    .containerp{
+        width: max-content;
+      
+    }
+    
+    h2 ~ h2 {
+        font-weight: 700;
+    }
+    
+    .colorshift{
+        background: -webkit-linear-gradient(0deg,#015687,#62d0e9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+        animation: shift 5s;
+    }
+    
+    @keyframes shift{
+        from{back-position: 0% 0%;}
+        to{backg-position: 100% 0%}
+    }
+    
+    
+    /* MAIN */
+    
+    h3{
+        font-size: 25px;
+        font-weight: 900;
+        padding: 30px;
+        text-align:left;
+    }
+    
+    main p{
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px;
+       
+    }
+    
+    button{
+        background-color: var(--button-color);
+        color: white;
+        width: 110px;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 10px;
+        padding: 7px;
+        border: none;
+        border-radius: 17px;
+    }
+    button, a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    button:hover{
+        background-color: var(--hover-color);
+    }
+    
+    .planets{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+    }
+    
+    .planet-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    img{
+        width: 60%;
+        height: auto;
+    }
+    
+    
+    
+    /*  FOOTER  */
+    .footer{
+        text-align: center;
+        margin-top: 40px;
+        padding: 10px;
+    
+    }
+
+    
+}
+
 
 
